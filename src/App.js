@@ -6,9 +6,9 @@ import React from "react";
 import { Header, Content, Footer } from "./func-components";
 import Calender from "./class-components";
 */
-import Banner from "./banner";
-
+//import Banner from "./banner";
+import { Calculator2 } from "./calculator";
 
 export default function App(){
-  return <Banner/>;
+  return <Calculator2/>;
 }
