@@ -1,6 +1,6 @@
 import React from "react";
-import RefsArray from "./ref-array";
+import MesssageBox from "./state-func";
 
 export default function App(){
-  return <RefsArray/>;
+  return <MesssageBox/>;
 }
