@@ -7,7 +7,7 @@ import Member from "./member";
 export default function Router4() {
     return (
         <BrowserRouter>
-            <Routes sty>
+            <Routes style = {{margin:'20px'}}>
                 <Route path="/" element={<Home />} />
                 <Route path="/products" element={<Products />} />
                 <Route path="/member" Component={Member} />
