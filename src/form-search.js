@@ -1,10 +1,23 @@
 import React from 'react'
 
 export default function FormSearch() {
+  const textKw = React.useRef()
+  const btOk = React.useRef()
+
+  const onChangeKw = () => {
+    if(textKw.current.value.trim() !== '') {
+      btOk.current.disabled = false
+    } else {
+      btOk.current.disabled = true
+    }
+  }
+
   return (
-    <form>
-        <input type='text' name='q' placeholder='ค้นหา'/>
-        <button>ตกลง</button>
-    </form>
+    <div style={{margin:'30px'}}>
+      <form>
+        <input type='text' name='kw' placeholder='ค้นหา' ref={textKw} onChange={onChangeKw}/>&nbsp;
+        <button ref={btOk} disabled>ตกลง</button>
+      </form>
+    </div>
   )
 }
