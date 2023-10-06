@@ -133,7 +133,7 @@ export default function FormValidation() {
           );
         })}
         <div className="text-center mt-4">
-          <button className="btn btn-sm px-4">OK</button>
+          <button className="btn btn-primary btn-sm px-4">OK</button>
         </div>
       </form>
     </div>
