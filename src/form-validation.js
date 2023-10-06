@@ -45,7 +45,7 @@ export default function FormValidation() {
           </label>
           <select id="cats" className="form-select form-select-sm">
             {cats.map((item) => {
-              return <option value={item[0]}>{item[0]}</option>;
+              return <option value={item[0]}>{item[1]}</option>;
             })}
           </select>
         </div>
